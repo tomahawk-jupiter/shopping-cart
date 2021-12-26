@@ -9,6 +9,7 @@ import './style.css';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const totalItems = cartItems.reduce((prev, curr) => prev + curr.quantity, 0);
 
   const addToCart = ({product, price}) => {
     const found = cartItems.find((each) => each.product === product);
@@ -67,7 +68,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Navbar totalItems={totalItems} />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="shop" element={<Shop addToCart={addToCart} />} />

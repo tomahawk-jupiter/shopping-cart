@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return(
     <div>
       <header>
@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="navbar">
           <Link className="nav-link" to="/home">Home</Link>
           <Link className="nav-link" to="/shop">Shop</Link>
-          <Link className="nav-link" to="/cart">Cart</Link>
+          <Link className="nav-link" to="/cart">Cart: {props.totalItems}</Link>
         </nav>
       </header>
       <Outlet />
