@@ -6,6 +6,7 @@ import Shop from "./Shop";
 import Cart from "./Cart";
 import Confirmation from "./Confirmation";
 import "./style.css";
+import NotFound from "./NotFound";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -95,9 +96,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-const NotFound = () => {
-  return <div>Page Not Found</div>;
-};
 
 export default App;
