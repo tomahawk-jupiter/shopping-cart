@@ -1,19 +1,25 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import homeImg from "./images/scene.webp";
 
 const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/shop')
-  }
+    navigate("/shop");
+  };
 
-  return(
+  return (
     <div className="home-container">
-      <h1>Welcome to "The Armoury"</h1>
-      <p>Going on a raid? Everything you need is right here at <span>The Armoury</span>.</p>
-      <button className="shop-btn" onClick={handleClick}>Shop Now</button>
+      <img className="home-img-bg" src={homeImg} />
+      <div className="home-inner-container">
+        <h1 className="home-page-h1">Welcome to Odin's Forge</h1>
+        <p>Quality steel worked by our master craftsman!</p>
+        <a className="shop-link" onClick={handleClick}>
+          Shop Now
+        </a>
+      </div>
     </div>
   );
-}
+};
 
 export default Home;
