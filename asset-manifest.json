@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.c0aefddc.css",
+    "main.js": "/shopping-cart/static/js/main.428d7899.js",
+    "static/media/sword.jpg": "/shopping-cart/static/media/sword.3b69e45f4abe991c579c.jpg",
+    "static/media/axe.webp": "/shopping-cart/static/media/axe.fbbe20f9ec5b02372fad.webp",
+    "static/media/scene.webp": "/shopping-cart/static/media/scene.f80c9931b75effc5788e.webp",
+    "static/media/shield.jpg": "/shopping-cart/static/media/shield.69b9b7e7abb1e66ec101.jpg",
+    "static/media/spear.jpg": "/shopping-cart/static/media/spear.f111613b9acaef7cd238.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.c0aefddc.css.map": "/shopping-cart/static/css/main.c0aefddc.css.map",
+    "main.428d7899.js.map": "/shopping-cart/static/js/main.428d7899.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0aefddc.css",
+    "static/js/main.428d7899.js"
+  ]
+}
