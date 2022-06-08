@@ -5,7 +5,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/shop");
+    navigate("/shopping-cart/shop");
   };
 
   return (

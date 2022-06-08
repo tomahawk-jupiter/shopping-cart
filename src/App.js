@@ -73,7 +73,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar totalItems={totalItems} />}>
+        <Route
+          path="/shopping-cart/"
+          element={<Navbar totalItems={totalItems} />}
+        >
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="shop" element={<Shop addToCart={addToCart} />} />

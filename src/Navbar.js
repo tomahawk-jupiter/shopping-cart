@@ -12,13 +12,13 @@ const Navbar = (props) => {
           className={`navbar ${!dropNav ? "" : "drop-nav-show"}`}
           onClick={() => setDropNav(false)}
         >
-          <Link className="nav-link" to="/home">
+          <Link className="nav-link" to="home">
             HOME
           </Link>
-          <Link className="nav-link" to="/shop">
+          <Link className="nav-link" to="shop">
             SHOP
           </Link>
-          <Link className="nav-link" to="/cart">
+          <Link className="nav-link" to="cart">
             CART {props.totalItems}
           </Link>
         </nav>
